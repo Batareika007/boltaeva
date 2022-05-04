@@ -95,12 +95,12 @@ body {
             }
 
             a:hover {
-                transform: scale(1.3);
+                transform: scale(1.4);
             }
 
-            // &:hover{
-            //     transform: scale(1);
-            // }
+            &:hover {
+                transform: scale(1);
+            }
         }
 
         &_icons {
@@ -142,7 +142,7 @@ main {
     flex: 1 1 auto;
 }
 
-/* cards section */ 
+/* cards section */
 
 .cards {
     display: flex;
@@ -164,11 +164,10 @@ main {
         color: $font_main_color;
         background-repeat: no-repeat;
         background-size: cover;
-        
+
 
         &_heading {
             font-size: 16px;
-            font-family: 'cera_prolight';
             text-transform: capitalize;
         }
 
@@ -179,9 +178,11 @@ main {
 
         &:nth-child(1) {
             background-image: url(../assets/cards/bj1.png);
+
             h2 {
                 font-size: 48px;
             }
+
             span {
                 display: flex;
                 justify-content: space-between;
@@ -192,6 +193,7 @@ main {
                 width: 72px;
                 padding: 14px 12px;
                 cursor: pointer;
+
                 img {
                     width: 14px;
                     height: 12px;
@@ -200,36 +202,45 @@ main {
             }
 
         }
+
         &:nth-child(2) {
-          background-image: url(../assets/cards/card1.png);
-          background-blend-mode: multiply;
+            background-image: url(../assets/cards/card1.png);
+            background-blend-mode: multiply;
         }
+
         &:nth-child(3) {
             background-image: url(../assets/cards/card2.png);
             background-blend-mode: multiply;
         }
+
         &:nth-child(4) {
             background-image: url(../assets/cards/card3.png);
             background-blend-mode: multiply;
         }
+
         &:nth-child(5) {
             background-image: url(../assets/cards/card3.png);
             background-blend-mode: multiply;
         }
+
         &:nth-child(6) {
             background-image: url(../assets/cards/card2.png);
             background-blend-mode: multiply;
         }
+
         &:nth-child(7) {
             background-image: url(../assets/cards/card1.png);
             background-blend-mode: multiply;
         }
+
         &:nth-child(8) {
             background-image: url(../assets/cards/bj2.png);
+
             // background-blend-mode: multiply;
             h2 {
                 font-size: 48px;
             }
+
             span {
                 display: flex;
                 justify-content: space-between;
@@ -240,6 +251,7 @@ main {
                 width: 72px;
                 padding: 14px 12px;
                 cursor: pointer;
+
                 img {
                     width: 14px;
                     height: 12px;
@@ -247,12 +259,15 @@ main {
 
             }
         }
+
         &:nth-child(9) {
             background-image: url(../assets/cards/bj3.png);
+
             // background-blend-mode: multiply;
             h2 {
                 font-size: 48px;
             }
+
             span {
                 display: flex;
                 justify-content: space-between;
@@ -263,6 +278,7 @@ main {
                 width: 72px;
                 padding: 14px 12px;
                 cursor: pointer;
+
                 img {
                     width: 14px;
                     height: 12px;
@@ -270,14 +286,17 @@ main {
 
             }
         }
+
         &:nth-child(10) {
             background-image: url(../assets/cards/card3.png);
             background-blend-mode: multiply;
         }
+
         &:nth-child(11) {
             background-image: url(../assets/cards/card2.png);
             background-blend-mode: multiply;
         }
+
         &:nth-child(12) {
             background-image: url(../assets/cards/card1.png);
             background-blend-mode: multiply;
@@ -288,58 +307,123 @@ main {
 
 /* features section*/
 
-.features{
+.features {
+    margin-bottom: 137px;
     display: flex;
-    &__img{
+
+    &__img {
         flex: 0 1 50%;
-        background-image: url(../assets/section_bg.png);
+        background-image: url(../assets/section_bg.jpg);
         background-repeat: no-repeat;
-        background-size: cover;        
+        background-size: cover;
+        overflow: hidden;
+        border-radius: 8px;
     }
-    
-    &__content{
+
+    &__content {
         flex: 0 1 720px;
         padding: 200px 114px;
-        
-        &_logo{
+
+        &_logo {
             margin-bottom: 67px;
-            
+
         }
-        
-        &_heading{
+
+        &_heading {
             margin-bottom: 32px;
-            font-family: 'cera_prolight';
             font-weight: 300;
             font-size: 34px;
             line-height: 150%;
             letter-spacing: -2px;
-            
+
         }
-        
-        &_text{
+
+        &_text {
             font-size: 18px;
             line-height: 180%;
             letter-spacing: -0.3px;
             margin-bottom: 44px;
         }
     }
-    
-    &__bottom{
+
+    &__bottom {
         background-image: url(../assets/icons/signature2.png);
         background-position: center;
         background-repeat: no-repeat;
         background-size: contain;
         line-height: 130%;
-        &_author{
+
+        &_author {
             font-size: 24px;
         }
-        &_author2{
+
+        &_author2 {
             font-size: 13px;
         }
     }
 }
 
+/* Gallery */
+
+.gallery {
+    padding-bottom: 128px;
+
+    &__inner {
+        margin-bottom: 97px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        flex-wrap: wrap;
+    }
+
+    &__heading {
+        flex: 0 1 600px;
+        font-size: 48px;
+        font-weight: 300;
+        line-height: 130%;
+    }
+
+    &__button {
+        flex: 0 1 310px;
+
+        a {
+            display: inline-block;
+            padding: 28px 100px;
+            background-color: $bg_alt_color;
+            border-radius: 28px;
+        }
+
+        letter-spacing: -0.3px;
+
+        img {
+            vertical-align: bottom;
+            margin-right: 10px;
+        }
+    }
+
+    &__images {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+
+        img {
+            border-radius: 8px;
+        }
+    }
+}
+
+
 /* footer -------------------  */
-.footer {
-    margin: 0 auto;
+footer {
+    padding-top: 75px;
+    padding-bottom: 142px;
+    background-color: $bg_alt_color;
+}
+
+.footer__logo {
+    text-align: center;
+    border-bottom: 1px solid #00000010;
+    padding-bottom: 65px;
+    margin-bottom: 64px;
 }
