@@ -419,6 +419,7 @@ footer {
     padding-top: 75px;
     padding-bottom: 142px;
     background-color: $bg_alt_color;
+    color: $font_main_color;
 }
 
 .footer__logo {
@@ -426,4 +427,57 @@ footer {
     border-bottom: 1px solid #00000010;
     padding-bottom: 65px;
     margin-bottom: 64px;
+}
+
+.footer__colums{
+    display: flex;
+    // flex-wrap: wrap;
+    justify-content: space-around;
+    // gap: 160px;
+
+    &_item{
+        flex: 0 1 250px;
+    }
+
+    &_heading{
+        font-size: 20px;
+        margin-bottom: 26px;
+    }
+
+    &_text{
+        font-size: 14px;
+        line-height: 160%;
+        opacity: 0.5;
+        margin-bottom: 26px;
+    }
+
+    &_links{
+        display: flex;
+        gap: 9px;
+        margin-bottom: 26px;
+        &:last-child{
+            gap: 30px;
+            img{
+                margin-right: 12px;
+                vertical-align: middle;
+            }
+        }
+    }
+
+    &_nav{
+        opacity: 0.5;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;   
+    }
+}
+
+.circle{
+    background-color: $bg_color;
+    height: 36px;
+    width: 36px;
+    border-radius: 36px;
+    img{
+        vertical-align: baseline;
+    }
 }

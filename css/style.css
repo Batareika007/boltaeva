@@ -926,6 +926,7 @@ footer {
   padding-top: 75px;
   padding-bottom: 142px;
   background-color: #EEE4DA;
+  color: #555555;
 }
 
 .footer__logo {
@@ -933,4 +934,70 @@ footer {
   border-bottom: 1px solid #00000010;
   padding-bottom: 65px;
   margin-bottom: 64px;
+}
+
+.footer__colums {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.footer__colums_item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 250px;
+          flex: 0 1 250px;
+}
+
+.footer__colums_heading {
+  font-size: 20px;
+  margin-bottom: 26px;
+}
+
+.footer__colums_text {
+  font-size: 14px;
+  line-height: 160%;
+  opacity: 0.5;
+  margin-bottom: 26px;
+}
+
+.footer__colums_links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 9px;
+  margin-bottom: 26px;
+}
+
+.footer__colums_links:last-child {
+  gap: 30px;
+}
+
+.footer__colums_links:last-child img {
+  margin-right: 12px;
+  vertical-align: middle;
+}
+
+.footer__colums_nav {
+  opacity: 0.5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 25px;
+}
+
+.circle {
+  background-color: #F5ECE3;
+  height: 36px;
+  width: 36px;
+  border-radius: 36px;
+}
+
+.circle img {
+  vertical-align: baseline;
 }
