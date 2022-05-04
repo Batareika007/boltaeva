@@ -36,13 +36,11 @@ body {
     justify-content: center;
 }
 
-
 /* container max width -------------------  */
 
 .container {
     max-width: 1440px;
-    // min-width: 100%;
-    // margin: 0 auto;
+    margin: 0 auto;
     padding: 0 70px;
 }
 
@@ -55,6 +53,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    background-attachment: fixed;
 
 }
 
@@ -165,6 +164,7 @@ main {
         color: $font_main_color;
         background-repeat: no-repeat;
         background-size: cover;
+        
 
         &_heading {
             font-size: 16px;
@@ -290,17 +290,15 @@ main {
 
 .features{
     display: flex;
-
     &__img{
         flex: 0 1 50%;
         background-image: url(../assets/section_bg.png);
         background-repeat: no-repeat;
-        background-size: cover;
-        
+        background-size: cover;        
     }
     
     &__content{
-        flex: 0 1 50%;
+        flex: 0 1 720px;
         padding: 200px 114px;
         
         &_logo{
@@ -309,19 +307,19 @@ main {
         }
         
         &_heading{
-            margin-bottom: 34px;
+            margin-bottom: 32px;
             font-family: 'cera_prolight';
             font-weight: 300;
             font-size: 34px;
             line-height: 150%;
-            // letter-spacing: -3px;
+            letter-spacing: -2px;
             
         }
         
         &_text{
             font-size: 18px;
             line-height: 180%;
-            // letter-spacing: -2px;
+            letter-spacing: -0.3px;
             margin-bottom: 44px;
         }
     }
