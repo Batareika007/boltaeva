@@ -1,0 +1,347 @@
+@import 'normalize';
+@import 'global';
+@import 'colors';
+
+@font-face {
+    font-family: 'cera_proregular';
+    src: url('/assets/fonts/CeraPro-Regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'cera_prolight';
+    src: url('/assets/fonts/CeraPro-Light.woff') format('woff');
+}
+
+body {
+    font-family: 'cera_proregular', sans-serif;
+    background-color: $bg_color;
+    color: $font_main_color;
+}
+
+.lite_font {
+    font-family: 'cera_prolight', sans-serif;
+}
+
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* container max width -------------------  */
+
+.container {
+    max-width: 1440px;
+    // min-width: 100%;
+    // margin: 0 auto;
+    padding: 0 70px;
+}
+
+// header + hero
+
+.hero {
+    color: $font_white_color;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 18.23%), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../assets/hero_bg.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.header {
+    position: absolute;
+    width: 100%;
+    padding: 0 70px;
+    top: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+
+    &__logo {
+        img {
+            min-width: 180px;
+        }
+    }
+
+    &__links {
+        text-transform: capitalize;
+        display: flex;
+        flex-direction: row;
+        gap: 48px;
+        font-size: 14px;
+
+        li {
+            transition: ease-in-out 0.3s;
+
+            &:hover {
+                transform: scale(1.3);
+            }
+        }
+
+        .header__links_icons {
+            a {
+                padding: 0 10px;
+                transition: ease-in-out 0.3s;
+            }
+
+            a:hover {
+                transform: scale(1.3);
+            }
+
+            // &:hover{
+            //     transform: scale(1);
+            // }
+        }
+
+        &_icons {
+            display: flex;
+            gap: 14px;
+        }
+
+        img {
+            min-width: 14px;
+        }
+
+    }
+
+}
+
+.hero__heading {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+h1 {
+    font-size: 48px;
+    letter-spacing: -2px;
+    font-weight: 400;
+    text-align: center;
+    text-decoration: underline 2px;
+    text-underline-offset: 15px;
+    text-decoration-color: hsla(0, 0%, 100%, 0.3);
+
+}
+
+
+/* main -------------------  */
+main {
+    margin: 0 auto;
+    flex: 1 1 auto;
+}
+
+/* cards section */ 
+
+.cards {
+    display: flex;
+    gap: 20px 20px;
+    flex-wrap: wrap;
+    padding: 70px 0;
+    justify-content: center;
+
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        padding: 21px 24px;
+        height: 430px;
+        width: 310px;
+        border-radius: 6px;
+        overflow: hidden;
+        background-color: $bg_alt_color;
+        color: $font_main_color;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        &_heading {
+            font-size: 16px;
+            font-family: 'cera_prolight';
+            text-transform: capitalize;
+        }
+
+        &_price {
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        &:nth-child(1) {
+            background-image: url(../assets/cards/bj1.png);
+            h2 {
+                font-size: 48px;
+            }
+            span {
+                display: flex;
+                justify-content: space-between;
+                background: rgba(136, 136, 136, 0.3);
+                backdrop-filter: blur(4px);
+                /* Note: backdrop-filter has minimal browser support */
+                border-radius: 10px;
+                width: 72px;
+                padding: 14px 12px;
+                cursor: pointer;
+                img {
+                    width: 14px;
+                    height: 12px;
+                }
+
+            }
+
+        }
+        &:nth-child(2) {
+          background-image: url(../assets/cards/card1.png);
+          background-blend-mode: multiply;
+        }
+        &:nth-child(3) {
+            background-image: url(../assets/cards/card2.png);
+            background-blend-mode: multiply;
+        }
+        &:nth-child(4) {
+            background-image: url(../assets/cards/card3.png);
+            background-blend-mode: multiply;
+        }
+        &:nth-child(5) {
+            background-image: url(../assets/cards/card3.png);
+            background-blend-mode: multiply;
+        }
+        &:nth-child(6) {
+            background-image: url(../assets/cards/card2.png);
+            background-blend-mode: multiply;
+        }
+        &:nth-child(7) {
+            background-image: url(../assets/cards/card1.png);
+            background-blend-mode: multiply;
+        }
+        &:nth-child(8) {
+            background-image: url(../assets/cards/bj2.png);
+            // background-blend-mode: multiply;
+            h2 {
+                font-size: 48px;
+            }
+            span {
+                display: flex;
+                justify-content: space-between;
+                background: rgba(136, 136, 136, 0.3);
+                backdrop-filter: blur(4px);
+                /* Note: backdrop-filter has minimal browser support */
+                border-radius: 10px;
+                width: 72px;
+                padding: 14px 12px;
+                cursor: pointer;
+                img {
+                    width: 14px;
+                    height: 12px;
+                }
+
+            }
+        }
+        &:nth-child(9) {
+            background-image: url(../assets/cards/bj3.png);
+            // background-blend-mode: multiply;
+            h2 {
+                font-size: 48px;
+            }
+            span {
+                display: flex;
+                justify-content: space-between;
+                background: rgba(136, 136, 136, 0.3);
+                backdrop-filter: blur(4px);
+                /* Note: backdrop-filter has minimal browser support */
+                border-radius: 10px;
+                width: 72px;
+                padding: 14px 12px;
+                cursor: pointer;
+                img {
+                    width: 14px;
+                    height: 12px;
+                }
+
+            }
+        }
+        &:nth-child(10) {
+            background-image: url(../assets/cards/card3.png);
+            background-blend-mode: multiply;
+        }
+        &:nth-child(11) {
+            background-image: url(../assets/cards/card2.png);
+            background-blend-mode: multiply;
+        }
+        &:nth-child(12) {
+            background-image: url(../assets/cards/card1.png);
+            background-blend-mode: multiply;
+        }
+    }
+
+}
+
+/* features section*/
+
+.features{
+    display: flex;
+
+    &__img{
+        flex: 0 1 50%;
+        background-image: url(../assets/section_bg.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+    }
+    
+    &__content{
+        flex: 0 1 50%;
+        padding: 200px 114px;
+        
+        &_logo{
+            margin-bottom: 67px;
+            
+        }
+        
+        &_heading{
+            margin-bottom: 34px;
+            font-family: 'cera_prolight';
+            font-weight: 300;
+            font-size: 34px;
+            line-height: 150%;
+            // letter-spacing: -3px;
+            
+        }
+        
+        &_text{
+            font-size: 18px;
+            line-height: 180%;
+            // letter-spacing: -2px;
+            margin-bottom: 44px;
+        }
+    }
+    
+    &__bottom{
+        background-image: url(../assets/icons/signature2.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        line-height: 130%;
+        &_author{
+            font-size: 24px;
+        }
+        &_author2{
+            font-size: 13px;
+        }
+    }
+}
+
+/* footer -------------------  */
+.footer {
+    margin: 0 auto;
+}
