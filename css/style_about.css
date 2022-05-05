@@ -1,0 +1,128 @@
+.hero {
+  background: none;
+}
+
+.header {
+  padding-top: 70px;
+  padding-bottom: 50px;
+  color: #555555;
+  position: static;
+  margin-bottom: 134px;
+}
+
+.header .mobile_menu {
+  border-color: #555555;
+}
+
+.back_link {
+  font-size: 14px;
+  letter-spacing: -0.3px;
+  margin-bottom: 30px;
+}
+
+.back_link img {
+  margin-right: 13px;
+}
+
+main {
+  max-width: 840px;
+}
+
+main .container {
+  padding: 15px;
+}
+
+h1 {
+  text-align: start;
+  font-size: 48px;
+  margin-bottom: 30px;
+  text-decoration: none;
+}
+
+p {
+  font-size: 20px;
+  line-height: 180%;
+  margin-bottom: 60px;
+}
+
+.about__img {
+  max-width: 809px;
+  height: 420px;
+  margin-bottom: 60px;
+  border-radius: 6px;
+}
+
+.features {
+  margin-bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.features__item {
+  text-align: left;
+  margin-bottom: 67px;
+}
+
+.features__item_heading {
+  font-size: 96px;
+  line-height: 110%;
+  color: #E3DAD0;
+}
+
+.features__item_text {
+  font-size: 20px;
+  line-height: 180%;
+}
+
+h2 {
+  font-size: 32px;
+  line-height: 150%;
+  font-weight: 300;
+  margin-bottom: 42px;
+}
+
+.testimonial {
+  background-color: #EEE4DA;
+  margin-bottom: 140px;
+  padding: 60px;
+  border-radius: 6px;
+}
+
+.testimonial__text {
+  font-size: 20px;
+  line-height: 180%;
+}
+
+.testimonial__user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url(../assets/images/signature_alt.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+}
+
+.testimonial__user_img {
+  margin-right: 25px;
+}
+
+.testimonial__user_name h3 {
+  font-size: 24px;
+  line-height: 130%;
+  font-weight: 400;
+}
+
+.testimonial__user_name span {
+  font-size: 13px;
+  line-height: 130%;
+}
