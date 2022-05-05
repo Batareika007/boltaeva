@@ -646,7 +646,6 @@ main {
   border-radius: 6px;
   overflow: hidden;
   background-color: #EEE4DA;
-  color: #555555;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -924,9 +923,8 @@ main {
 /* footer -------------------  */
 footer {
   padding-top: 75px;
-  padding-bottom: 142px;
+  padding-bottom: 30px;
   background-color: #EEE4DA;
-  color: #555555;
 }
 
 .footer__logo {
@@ -937,17 +935,27 @@ footer {
 }
 
 .footer__colums {
+  margin-bottom: 70px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  gap: 40px;
+  -ms-flex-item-align: center;
+      align-self: center;
 }
 
 .footer__colums_item {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 250px;
           flex: 0 1 250px;
+}
+
+.footer__colums_item:first-child {
+  margin-right: 160px;
 }
 
 .footer__colums_heading {
@@ -1000,4 +1008,161 @@ footer {
 
 .circle img {
   vertical-align: baseline;
+}
+
+.copyright {
+  text-align: center;
+  opacity: 0.5;
+}
+
+.disable_desktop {
+  display: none;
+}
+
+/* ---------- adaptive ------------- */
+@media (max-width: 1024px) {
+  .container, .header {
+    padding: 0 30px;
+  }
+  .header {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .mobile_menu {
+    width: 22px;
+    height: 9px;
+    border-top: 1.5px solid white;
+    border-bottom: 1.5px solid white;
+  }
+}
+
+@media (max-width: 426px) {
+  .disable_desktop {
+    display: block;
+  }
+  .disable_mobile {
+    display: none;
+  }
+  .hero {
+    height: 600px;
+    background-attachment: scroll;
+    background-image: url(../assets/hero_bg_mobile.jpg);
+  }
+  .container, .header {
+    padding: 0 15px;
+  }
+  .header__links .header__links_icons a {
+    padding: 0;
+  }
+  h1 {
+    font-size: 36px;
+  }
+  .cards__item {
+    width: 100%;
+  }
+  .features {
+    margin-bottom: 90px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .features__img {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 468px;
+            flex: 0 1 468px;
+    border-radius: 0;
+  }
+  .features__content {
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+    padding: 0 15px;
+    margin-bottom: 50px;
+  }
+  .features__content_logo {
+    margin-bottom: 30px;
+  }
+  .features__content_heading {
+    margin-bottom: 20px;
+    font-size: 22px;
+    letter-spacing: -0.6px;
+  }
+  .features__content_text {
+    font-size: 16px;
+  }
+  .gallery {
+    padding-bottom: 50px;
+  }
+  .gallery__inner {
+    gap: 30px;
+  }
+  .gallery__heading {
+    font-size: 30px;
+    letter-spacing: -0.3px;
+  }
+  .gallery__button {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+    font-size: 20px;
+  }
+  .gallery__button a {
+    width: 100%;
+    text-align: center;
+    padding: 28px 0;
+  }
+  .gallery__images {
+    gap: 17px;
+  }
+  .gallery__images img {
+    width: 164px;
+  }
+  .footer__logo {
+    padding-bottom: 40px;
+    margin-bottom: 30px;
+  }
+  .footer__colums_item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+    text-align: center;
+  }
+  .footer__colums_item:first-child {
+    margin: 0;
+  }
+  .footer__colums_links {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 11px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .footer__colums_links .circle {
+    width: 44px;
+    height: 44px;
+    border-radius: 44px;
+  }
+  .footer__colums_links .mobile_buttons {
+    background-color: #F5ECE3;
+    padding: 16px 0;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 164px;
+            flex: 1 1 164px;
+    border-radius: 46px;
+  }
+  .footer__colums_links .mobile_buttons img {
+    margin-right: 12px;
+  }
+  .copyright {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 375px) {
+  .gallery__images img {
+    width: 100%;
+  }
 }

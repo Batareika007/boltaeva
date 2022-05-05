@@ -161,7 +161,6 @@ main {
         border-radius: 6px;
         overflow: hidden;
         background-color: $bg_alt_color;
-        color: $font_main_color;
         background-repeat: no-repeat;
         background-size: cover;
 
@@ -417,9 +416,8 @@ main {
 /* footer -------------------  */
 footer {
     padding-top: 75px;
-    padding-bottom: 142px;
+    padding-bottom: 30px;
     background-color: $bg_alt_color;
-    color: $font_main_color;
 }
 
 .footer__logo {
@@ -430,13 +428,18 @@ footer {
 }
 
 .footer__colums{
+    margin-bottom: 70px;
     display: flex;
-    // flex-wrap: wrap;
+    flex-wrap: wrap;
     justify-content: space-around;
-    // gap: 160px;
-
+    gap:40px;
+    align-self: center;
+    
     &_item{
         flex: 0 1 250px;
+        &:first-child{
+            margin-right: 160px;
+        }
     }
 
     &_heading{
@@ -479,5 +482,173 @@ footer {
     border-radius: 36px;
     img{
         vertical-align: baseline;
+    }
+}
+
+.copyright{
+    text-align: center;
+    opacity: 0.5;
+}
+
+.disable_desktop{
+    display: none;
+}
+/* ---------- adaptive ------------- */
+
+@media  (max-width: 1024px){
+    .container, .header{
+        padding: 0 30px;
+    }
+    .header{
+        align-items: center;
+    }
+
+
+    .mobile_menu{
+        width: 22px;
+        height: 9px;
+        border-top: 1.5px solid white;
+        border-bottom: 1.5px solid white;
+    }
+
+}
+
+
+
+
+
+
+@media (max-width: 426px){
+    .disable_desktop{
+        display: block;
+    }
+    .disable_mobile{
+        display: none;
+    }
+    .hero{
+        height: 600px;
+        background-attachment: scroll;
+        background-image: url(../assets/hero_bg_mobile.jpg);
+    }
+
+    .container, .header{
+        padding: 0 15px;
+    }
+
+    .header__links .header__links_icons a{
+            padding: 0;
+    }
+
+    h1{
+        font-size: 36px;
+    }
+
+    .cards__item{
+        width: 100%;
+        
+    }
+    .features{
+        margin-bottom: 90px;
+        flex-direction: column-reverse;
+        &__img{
+            flex: 0 1 468px; 
+            border-radius: 0; 
+                      
+        }
+        &__content{
+            flex-basis: auto;
+            padding: 0 15px;
+            margin-bottom: 50px;
+            &_logo{
+                margin-bottom: 30px;
+            }
+            &_heading{
+                margin-bottom: 20px;
+                font-size: 22px;
+                letter-spacing: -0.6px;
+            }
+            &_text{
+                font-size: 16px;
+            }
+        }
+    }
+
+    .gallery{
+        padding-bottom: 50px;
+        &__inner{
+            gap: 30px;
+        }
+        &__heading{
+            font-size: 30px;
+            letter-spacing: -0.3px;
+        }
+        &__button{
+            flex: 1 1 100%;
+            font-size: 20px;
+            a{
+                width: 100%;
+                text-align: center;
+                padding: 28px 0;
+            }
+        }
+
+        &__images{
+            gap: 17px;
+            img{
+                width: 164px;
+            }
+        }
+    }
+
+    .footer__logo{
+        padding-bottom: 40px;
+    margin-bottom: 30px;
+    }
+
+    .footer__colums{
+
+        &_item{
+            flex: 0 1 100%;
+            text-align: center;
+            &:first-child{
+                margin: 0;
+            }
+
+        }
+        &_links{
+            justify-content: center;
+            gap: 11px;
+            display: flex;
+            .circle{
+             width: 44px;
+             height: 44px;
+             border-radius: 44px;
+            }
+            .mobile_buttons{
+                background-color: $bg_color;
+                padding: 16px 0;
+                flex: 1 1 164px;
+                border-radius: 46px;
+                img{
+                    margin-right: 12px;
+                }
+                
+            }
+        }
+    }
+    
+    .copyright{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 375px) {
+    
+
+    .gallery__images{
+        img{
+
+            width: 100%;
+        }
     }
 }

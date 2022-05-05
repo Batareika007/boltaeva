@@ -28,24 +28,30 @@
         <!-- hero + header -->
 
         <div class="hero">
-            <header class="header">
-                <!-- header links -->
-                <ul class="header__links">
-                    <li><a href="#" rel="noopener noreferrer">catalog</a></li>
-                    <li><a href="#" rel="noopener noreferrer">about</a></li>
-                    <li><a href="#" rel="noopener noreferrer">delivery</a></li>
+            <div class="container">
+
+            </div>
+                <header class="header">
+                    <!-- header links -->
+                    <ul class="header__links">
+                        <li class="disable_mobile"><a href="#" rel="noopener noreferrer">catalog</a></li>
+                        <li class="disable_mobile"><a href="#" rel="noopener noreferrer">about</a></li>
+                    <li class="disable_mobile"><a href="#" rel="noopener noreferrer">delivery</a></li>
+                    <li class="mobile_menu disable_desktop"><a  href="#"></a></li>
+                    
                 </ul>
+
                 <!-- logo -->
                 <a href="index.html" class="header__logo">
                     <img src="assets/logo.svg" alt="boltaeva">
                 </a>
                 <!-- header links -->
                 <ul class="header__links">
-                    <li><a href="#" rel="noopener noreferrer">contacts</a></li>
+                    <li class="disable_mobile"><a href="#" rel="noopener noreferrer">contacts</a></li>
                     <li class="header__links_icons">
-                        <a href="#" rel="noopener noreferrer"><img src="assets/icons/search.svg" alt="search"></a>
+                        <a class="disable_mobile" href="#" rel="noopener noreferrer"><img src="assets/icons/search.svg" alt="search"></a>
                         <a href="#" rel="noopener noreferrer"><img src="assets/icons/cart.svg" alt="cart"></a>
-                        <a href="#" rel="noopener noreferrer"><img src="assets/icons/user.svg" alt="user"></a>
+                        <a class="disable_mobile" href="#" rel="noopener noreferrer"><img src="assets/icons/user.svg" alt="user"></a>
                     </li>
                 </ul>
             </header>
@@ -57,6 +63,7 @@
 
 
             </div>
+
         </div>
 
         <!-- main section -->
@@ -65,7 +72,7 @@
             <!-- cards section -->
             <div class="container">
                 <section class="cards">
-                    <!-- card 1 -->
+                    <!-- card 1 slider -->
                     <div class="cards__item">
                         <h2 class="cards__item_heading lite_font">care</h2>
                         <span class="cards__item_price">
@@ -74,36 +81,36 @@
                         </span>
                     </div>
                     <!-- card 2 -->
-                    <div class="cards__item">
+                    <div class="cards__item disable_mobile">
                         <h2 class="cards__item_heading lite_font">perfect brows</h2>
                         <span class="cards__item_price">54 €</span>
                     </div>
                     <!-- card 3 -->
-                    <div class="cards__item">
+                    <div class="cards__item disable_mobile">
                         <h2 class="cards__item_heading lite_font">perfect brows</h2>
                         <span class="cards__item_price">54 €</span>
                     </div>
                     <!-- card 4 -->
-                    <div class="cards__item">
+                    <div class="cards__item disable_mobile">
                         <h2 class="cards__item_heading lite_font">perfect brows</h2>
                         <span class="cards__item_price">54 €</span>
                     </div>
                     <!-- card 5 -->
-                    <div class="cards__item">
+                    <div class="cards__item disable_mobile">
                         <h2 class="cards__item_heading lite_font">perfect brows</h2>
                         <span class="cards__item_price">54 €</span>
                     </div>
                     <!-- card 6 -->
-                    <div class="cards__item">
+                    <div class="cards__item disable_mobile">
                         <h2 class="cards__item_heading lite_font">perfect brows</h2>
                         <span class="cards__item_price">54 €</span>
                     </div>
                     <!-- card 7 -->
-                    <div class="cards__item">
+                    <div class="cards__item disable_mobile">
                         <h2 class="cards__item_heading lite_font">perfect brows</h2>
                         <span class="cards__item_price">54 €</span>
                     </div>
-                    <!-- card 8 -->
+                    <!-- card 8 slider -->
                     <div class="cards__item">
                         <h2 class="cards__item_heading lite_font">beauty</h2>
                         <span class="cards__item_price">
@@ -111,7 +118,7 @@
                             <img src="assets/icons/arrow_next.svg" alt="next">
                         </span>
                     </div>
-                    <!-- card 9 -->
+                    <!-- card 9 slider -->
                     <div class="cards__item">
                         <h2 class="cards__item_heading lite_font">brows</h2>
                         <span class="cards__item_price">
@@ -120,17 +127,17 @@
                         </span>
                     </div>
                     <!-- card 10 -->
-                    <div class="cards__item">
+                    <div class="cards__item disable_mobile">
                         <h2 class="cards__item_heading lite_font">perfect brows</h2>
                         <span class="cards__item_price">54 €</span>
                     </div>
                     <!-- card 11 -->
-                    <div class="cards__item">
+                    <div class="cards__item disable_mobile">
                         <h2 class="cards__item_heading lite_font">perfect brows</h2>
                         <span class="cards__item_price">54 €</span>
                     </div>
                     <!-- card 12 -->
-                    <div class="cards__item">
+                    <div class="cards__item disable_mobile">
                         <h2 class="cards__item_heading lite_font">perfect brows</h2>
                         <span class="cards__item_price">54 €</span>
                     </div>
@@ -142,7 +149,6 @@
             <section class="features">
 
                 <div class="features__img">
-
                 </div>
 
                 <div class="features__content">
@@ -174,10 +180,10 @@
                     <img src="assets/images/2.jpg" alt="product image">
                     <img src="assets/images/1.jpg" alt="product image">
                     <img src="assets/images/2.jpg" alt="product image">
-                    <img src="assets/images/3.jpg" alt="product image">
-                    <img src="assets/images/4.jpg" alt="product image">
-                    <img src="assets/images/3.jpg" alt="product image">
-                    <img src="assets/images/4.jpg" alt="product image">
+                    <img class="disable_mobile" src="assets/images/3.jpg" alt="product image">
+                    <img class="disable_mobile" src="assets/images/4.jpg" alt="product image">
+                    <img class="disable_mobile" src="assets/images/3.jpg" alt="product image">
+                    <img class="disable_mobile" src="assets/images/4.jpg" alt="product image">
                 </div>
             </section>
         </main>
@@ -195,15 +201,21 @@
                 <!-- footer navigator section -->
                 <section class="footer__colums">
 
+                    <!-- company -->
+
                     <div class="footer__colums_item">
                         <!-- heading -->
-                        <h4 class="footer__colums_heading">Company</h4>
+                        <h4 class="footer__colums_heading disable_mobile">Company</h4>
                         <!-- text -->
                         <p class="footer__colums_text">
                             The brand strives to create respect for its products among the audience, so that the
                             presence of the company's products is a sign of prestige.
                         </p>
                         <!-- links -->
+                        <ul class="footer__colums_links disable_desktop">
+                            <li class="mobile_buttons flex-center"><a href="#"> <img src="assets/icons/envelop.svg" alt="mail">E-mail</a></li>
+                            <li class="mobile_buttons flex-center"><a href="#"> <img src="assets/icons/whatsapp.svg" alt="whatsapp">Whatsapp</a></li>
+                        </ul>
                         <ul class="footer__colums_links">
                             <li class="circle flex-center"><a href="#"><img src="assets/icons/facebook.svg" alt="facebook"> </a></li>
                             <li class="circle flex-center"><a href="#"><img src="assets/icons/instagram-alt.svg" alt="instagram"> </a></li>
@@ -214,8 +226,8 @@
                         <!-- signature -->
                         <img src="assets/icons/signature.png" alt="signature">
                     </div>
-
-                    <div class="footer__colums_item">
+                    <!-- navigator menu -->
+                    <div class="footer__colums_item disable_mobile">
                         <h4 class="footer__colums_heading">Navigation</h4>
                         <ul class="footer__colums_nav">
                             
@@ -228,8 +240,8 @@
                             
                         </ul>
                     </div>
-
-                    <div class="footer__colums_item">
+                    <!-- products menu -->
+                    <div class="footer__colums_item disable_mobile">
                         <h4 class="footer__colums_heading">Products</h4>
                         <ul class="footer__colums_nav">
                                 <li><a href="#">Care cosmetics</a></li>
@@ -240,8 +252,8 @@
                                 <li><a href="#">Accessories</a></li>
                         </ul>
                     </div>
-
-                    <div class="footer__colums_item">
+                    <!-- contacts -->
+                    <div class="footer__colums_item disable_mobile">
                         <h4 class="footer__colums_heading">Contacts</h4>
                         <p class="footer__colums_text">
                             We are open to new opportunities, so you can contact our company representatives for any
@@ -254,6 +266,8 @@
                     </div>
 
                 </section>
+
+                <div class="copyright">All rights reserved (c) BOLTAEVA 2022</div>
             </div>
         </footer>
 
