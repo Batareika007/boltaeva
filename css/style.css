@@ -499,6 +499,7 @@ body {
   padding: 0 70px;
 }
 
+/* header + hero --------------------------  */
 .hero {
   color: #ffffff;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), color-stop(18.23%, rgba(0, 0, 0, 0))), -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.1))), url(../assets/hero_bg.jpg);
@@ -1034,6 +1035,7 @@ footer {
     height: 9px;
     border-top: 1.5px solid white;
     border-bottom: 1.5px solid white;
+    cursor: pointer;
   }
 }
 

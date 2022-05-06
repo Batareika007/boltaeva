@@ -11,7 +11,7 @@
     padding-bottom: 50px;
     color: $font_main_color;
     position: static;
-
+    border-bottom: 1px solid #5555552f;
     .mobile_menu {
         border-color: $font_main_color;
     }
@@ -33,7 +33,7 @@ main {
     max-width: 840px;
 
     .container {
-        padding: 15px;
+        padding: 0 15px;
     }
 }
 
@@ -122,5 +122,66 @@ h2 {
                 line-height: 130%;
             }
         }
+    }
+}
+
+/* adaptive --------------------*/
+
+@media (max-width: 426px){
+    .header{
+        margin-bottom: 80px;
+    }
+
+    .back_link{
+        margin-bottom:20px;
+    }
+
+    h1{
+        font-size: 36px;
+    }
+
+    p{
+        font-size: 16px;
+        margin-bottom: 40px;
+    }
+
+    .about__img{
+        margin-bottom: 40px;
+        height: 300px;
+        img{
+            height: 100%;
+            
+        }
+    }
+
+    .features{
+        flex-direction: row;
+        gap: 33px;
+        justify-content: center;
+        margin-bottom: 50px;
+        &__item{
+            flex: 1 1 45%;
+            margin-bottom: 30px;
+            &_heading{
+                font-size: 66px;
+                letter-spacing: -0.3px;
+            }
+            &_text{
+                font-size: 16px;
+            }
+        }
+    }
+
+    h2{
+        font-size: 27px;
+        margin-bottom: 30px;
+    }
+    
+    .testimonial{
+        padding: 30px 20px 50px;
+        &__text{
+            font-size: 16px;
+        }
+        margin-bottom: 70px;
     }
 }
