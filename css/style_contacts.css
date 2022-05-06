@@ -1,0 +1,80 @@
+.hero {
+  background: none;
+  height: auto;
+}
+
+.header {
+  padding-top: 70px;
+  padding-bottom: 50px;
+  color: #555555;
+  position: static;
+  border-bottom: 1px solid #5555552f;
+  margin-bottom: 102px;
+}
+
+.header .mobile_menu {
+  border-color: #555555;
+}
+
+h1 {
+  margin-bottom: 38px;
+}
+
+.contacts__img {
+  margin-bottom: 38px;
+}
+
+.contacts__card {
+  margin-bottom: 43px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 5px 0px;
+}
+
+.contacts__card_inner {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 314px;
+          flex: 0 1 314px;
+  padding: 40px;
+  background-color: #EEE4DA;
+  border-radius: 8px;
+}
+
+.contacts__card_inner p {
+  font-size: 16px;
+  opacity: 0.3;
+  margin-bottom: 11px;
+}
+
+.contacts__card_inner a {
+  font-size: 21px;
+  line-height: 110%;
+}
+
+.gallery__inner {
+  margin-bottom: 50px;
+}
+
+.gallery__heading {
+  font-size: 32px;
+}
+
+.gallery__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 26px;
+}
+
+.gallery__links .circle {
+  background-color: #EEE4DA;
+  width: 62px;
+  height: 62px;
+  cursor: pointer;
+}
