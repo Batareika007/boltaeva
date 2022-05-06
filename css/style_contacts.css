@@ -18,10 +18,16 @@
 
 h1 {
   margin-bottom: 38px;
+  text-decoration: none;
 }
 
 .contacts__img {
   margin-bottom: 38px;
+  max-width: 100%;
+}
+
+.contacts__img img {
+  max-width: 100%;
 }
 
 .contacts__card {
@@ -38,9 +44,9 @@ h1 {
 }
 
 .contacts__card_inner {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 314px;
-          flex: 0 1 314px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 314px;
+          flex: 1 1 314px;
   padding: 40px;
   background-color: #EEE4DA;
   border-radius: 8px;
@@ -55,6 +61,16 @@ h1 {
 .contacts__card_inner a {
   font-size: 21px;
   line-height: 110%;
+}
+
+.contacts__map {
+  overflow: hidden;
+  border-radius: 6px;
+  margin-bottom: 73px;
+}
+
+.gallery {
+  margin-bottom: 110px;
 }
 
 .gallery__inner {
@@ -77,4 +93,87 @@ h1 {
   width: 62px;
   height: 62px;
   cursor: pointer;
+}
+
+.form {
+  height: 752px;
+  margin-bottom: 140px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.form form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.form__img {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 650px;
+          flex: 0 1 650px;
+  background-image: url(../assets/images/form_img.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.form__heading {
+  font-size: 36px;
+  line-height: 110%;
+  margin-bottom: 30px;
+}
+
+.form__logo {
+  margin-bottom: 70px;
+}
+
+.form label {
+  font-size: 13px;
+  line-height: 110%;
+  margin-bottom: 15px;
+  color: #AC8F78;
+}
+
+.form input {
+  font-size: 20px;
+  line-height: 110%;
+  padding-bottom: 24px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  background: none;
+  margin-bottom: 30px;
+}
+
+.form__submit {
+  width: 362px;
+  border-radius: 66px;
+  background-color: #EEE4DA;
+  position: relative;
+  background-image: url(../assets/icons/arrow_next_alt.svg);
+  background-repeat: no-repeat;
+  background-position: 250px center;
+}
+
+.form__submit input {
+  position: relative;
+  padding: 28px 0;
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  margin: 0;
 }

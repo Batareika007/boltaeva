@@ -23,10 +23,15 @@
 
 h1 {
     margin-bottom: 38px;
+    text-decoration: none;
 }
 
 .contacts__img {
     margin-bottom: 38px;
+    max-width: 100%;
+    img{
+        max-width: 100%;
+    }
 }
 
 .contacts__card {
@@ -35,8 +40,9 @@ h1 {
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 5px 0px;
-    &_inner {   
-        flex: 0 1 314px;
+
+    &_inner {
+        flex: 1 1 314px;
         padding: 40px;
         background-color: $bg_alt_color;
         border-radius: 8px;
@@ -54,7 +60,15 @@ h1 {
     }
 }
 
+.contacts__map {
+    overflow: hidden;
+    border-radius: 6px;
+    margin-bottom: 73px;
+}
+
 .gallery {
+    margin-bottom: 110px;
+
     &__inner {
         margin-bottom: 50px;
 
@@ -74,6 +88,71 @@ h1 {
             height: 62px;
             cursor: pointer;
 
+        }
+    }
+}
+
+.form {
+    form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    height: 752px;
+    margin-bottom: 140px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    &__img{
+        flex: 0 1 650px;
+        background-image: url(../assets/images/form_img.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    &__heading {
+        font-size: 36px;
+        line-height: 110%;
+        margin-bottom: 30px;
+    }
+
+    &__logo {
+        margin-bottom: 70px;
+    }
+
+
+    label {
+        font-size: 13px;
+        line-height: 110%;
+        margin-bottom: 15px;
+        color: $font_heading_color;
+    }
+
+    input {
+        font-size: 20px;
+        line-height: 110%;
+        padding-bottom: 24px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+        background: none;
+        margin-bottom: 30px;
+    }
+
+    &__submit{
+        width: 362px;
+        border-radius: 66px;
+        background-color: $bg_alt_color;
+        position: relative;
+        background-image: url(../assets/icons/arrow_next_alt.svg);
+        background-repeat: no-repeat;
+        background-position: 250px center;
+        input{
+            position: relative;
+            padding: 28px 0;
+            cursor: pointer;
+            width: 100%;
+            border: none;
+            margin: 0;
         }
     }
 }
