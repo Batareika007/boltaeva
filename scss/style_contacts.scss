@@ -1,7 +1,5 @@
 @import 'colors';
 
-
-
 .hero {
     background: none;
     height: auto;
@@ -22,6 +20,7 @@
 }
 
 h1 {
+    font-size: 48px;
     margin-bottom: 38px;
     text-decoration: none;
 }
@@ -42,7 +41,7 @@ h1 {
     gap: 5px 0px;
 
     &_inner {
-        flex: 1 1 314px;
+        flex: 0 1 314px;
         padding: 40px;
         background-color: $bg_alt_color;
         border-radius: 8px;
@@ -80,8 +79,8 @@ h1 {
 
     &__links {
         display: flex;
-        gap: 26px;
-
+        justify-content: space-between;
+        flex: 0 1 450px;
         .circle {
             background-color: $bg_alt_color;
             width: 62px;
@@ -97,6 +96,7 @@ h1 {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        
     }
     height: 752px;
     margin-bottom: 140px;
@@ -153,6 +153,78 @@ h1 {
             width: 100%;
             border: none;
             margin: 0;
+        }
+    }
+}
+
+
+@media (max-width:426px) {
+    .header{
+        margin-bottom: 50px;
+    }
+    
+    h1{
+        font-size: 36px;
+    }
+
+    .contacts__img{
+        width: 100%;
+    }
+
+    .contacts__card{
+        margin-bottom: 50px;
+
+        &_inner{
+            flex: 1 1 auto;
+            padding: 20px;
+        }
+    }
+
+    .contacts__map{
+        height: 500px;
+        margin-bottom: 90px;
+        img{
+            height: 100%;
+        }
+    }
+
+    .gallery{
+        margin-bottom: 90px;
+        padding: 0;
+        &__heading{
+            font-size: 22px;
+        }
+
+        &__links{
+
+            .circle{
+                width: 52px;
+                height:  52px;
+            }
+        }
+    }
+
+    .form{
+        height: auto;
+        margin-bottom: 70px;
+        form{
+            width: 100%;
+            margin-bottom: 70px;
+        }
+
+        &__logo {
+        margin-bottom: 40px;
+    }
+        &__submit{
+            width: 100%;
+            // max-width: 362px;
+            background-position: 75% center;
+        }
+
+        &__img{
+            height: 500px;
+            background-size: cover;
+            // background-attachment: fixed;
         }
     }
 }
