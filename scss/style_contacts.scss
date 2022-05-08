@@ -158,6 +158,22 @@ h1 {
     }
 }
 
+/* adaptiove ---------- */ 
+
+@media  (max-width: 1024px){
+    .container{
+        padding: 0 30px;
+    }
+
+    .form{
+        height: auto;
+        &__img{
+
+            background-size: cover;
+            height: 500px;
+        }
+    }
+}
 
 @media (max-width:426px) {
     .header{
@@ -219,11 +235,6 @@ h1 {
         &__submit{
             width: 100%;
             background-position: 75% center;
-        }
-
-        &__img{
-            height: 500px;
-            background-size: cover;
         }
     }
 }
