@@ -36,8 +36,6 @@ h1 {
 .contacts__card {
     margin-bottom: 43px;
     display: flex;
-    // justify-content: space-between;
-    // justify-content: space-evenly;
     flex-wrap: wrap;
     gap: 10px;
 
@@ -93,24 +91,26 @@ h1 {
 }
 
 .form {
+    min-height: 752px;
+    margin-bottom: 140px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 70px;
     form{
         display: flex;
         flex-direction: column;
         justify-content: center;
         
     }
-    height: 752px;
-    margin-bottom: 140px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
 
     &__img{
         flex: 0 1 650px;
         background-image: url(../assets/images/form_img.jpg);
         background-repeat: no-repeat;
         background-position: center center;
+        min-height: 500px;
     }
     &__heading {
         font-size: 36px;
@@ -170,8 +170,8 @@ h1 {
         &__img{
 
             background-size: cover;
-            height: 500px;
         }
+        
     }
 }
 
@@ -222,11 +222,8 @@ h1 {
     }
 
     .form{
-        height: auto;
-        margin-bottom: 70px;
         form{
             width: 100%;
-            margin-bottom: 70px;
         }
 
         &__logo {
