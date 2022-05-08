@@ -431,15 +431,12 @@ footer {
     margin-bottom: 70px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    gap:40px;
+    justify-content: center;
+    gap:70px;
     align-self: center;
     
     &_item{
-        flex: 0 1 250px;
-        &:first-child{
-            margin-right: 160px;
-        }
+        flex: 1 1 250px;
     }
 
     &_heading{
@@ -493,6 +490,7 @@ footer {
 .disable_desktop{
     display: none;
 }
+
 /* ---------- adaptive ------------- */
 
 @media  (max-width: 1024px){
@@ -513,7 +511,6 @@ footer {
     }
 
 }
-
 
 
 

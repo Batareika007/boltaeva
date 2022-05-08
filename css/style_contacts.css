@@ -36,18 +36,15 @@ h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 5px 0px;
+  gap: 10px;
 }
 
 .contacts__card_inner {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 314px;
-          flex: 0 1 314px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 314px;
+          flex: 1 1 314px;
   padding: 40px;
   background-color: #EEE4DA;
   border-radius: 8px;
