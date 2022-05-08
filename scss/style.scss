@@ -311,7 +311,7 @@ main {
     display: flex;
 
     &__img {
-        flex: 0 1 50%;
+        flex: 1 1 auto;
         background-image: url(../assets/section_bg.jpg);
         background-repeat: no-repeat;
         background-size: cover;
@@ -395,11 +395,10 @@ main {
         letter-spacing: -0.3px;
 
         img {
-            vertical-align: bottom;
             margin-right: 10px;
         }
     }
-
+    /* gallery images */ 
     &__images {
         display: flex;
         flex-wrap: wrap;
@@ -494,11 +493,15 @@ footer {
 /* ---------- adaptive ------------- */
 
 @media  (max-width: 1024px){
-    .container, .header{
-        padding: 0 30px;
-    }
+    
     .header{
         align-items: center;
+        .disable_mobile{
+            display: none;
+        }
+        .disable_desktop{
+            display: block;
+        }
     }
 
 
@@ -508,6 +511,27 @@ footer {
         border-top: 1.5px solid white;
         border-bottom: 1.5px solid white;
         cursor: pointer;
+    }
+
+    .cards{}
+
+    .features{
+        flex-direction: column-reverse;
+        
+        &__content{
+            padding: 30px;
+            flex: 0 1 auto;
+        }
+
+        &__img{
+            flex: 0 1 470px; 
+        }
+    }
+
+    .gallery{
+        &__inner{
+            gap: 30px;
+        }
     }
 
 }
