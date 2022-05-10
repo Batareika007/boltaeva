@@ -1031,6 +1031,7 @@ footer {
     display: block;
   }
   .mobile_menu {
+    display: inline-block;
     width: 22px;
     height: 9px;
     border-top: 1.5px solid white;
